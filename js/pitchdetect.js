@@ -371,8 +371,8 @@ function updatePitch( time ) {
 	 	pitchElem.innerText = Math.round( pitch ) ;
 	 	var note =  noteFromPitch( pitch );
 		noteElem.innerHTML = noteStrings[note%12];
+		console.log(noteStrings[note%12]);
 		var detune = centsOffFromPitch( pitch, note );
-		console.log(note);
 		if (detune == 0 ) {
 			detuneElem.className = "";
 			detuneAmount.innerHTML = "--";
