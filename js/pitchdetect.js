@@ -79,7 +79,7 @@ window.onload = function() {
 	  	return false;
 	};
 	
-	fetch('whistling3.ogg')
+	fetch('../watzatsong.mp3')
 		.then((response) => {
 			if (!response.ok) {
 				throw new Error(`HTTP error, status = ${response.status}`);
